@@ -1,5 +1,7 @@
 const TYPES = {
-  Controller: Symbol('Controller')
+  Controller: Symbol('Controller'),
+  OrganisationService: Symbol('OrganisationService'),
+  OrganisationRepository: Symbol('OrganisationRepository'),
 }
 
 export default TYPES
