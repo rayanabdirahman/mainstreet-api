@@ -9,7 +9,8 @@ const connectToDbClient = async (uri: string = MONGO_URI): Promise<void> => {
     await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useFindAndModify: false
+      useFindAndModify: false,
+      useCreateIndex: true
     })
 
     logger.info(`Successfully connected to database ✅`)
